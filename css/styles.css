@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ body{
+   background-color: hsl(0, 0%, 95%);
+   font-family: Lexend Deca;
+   Font-size: 15px;
+ }
+ h1{
+   font-family: Big Shoulders Display;
+   font-size: 38px;
+   color: hsl(0, 0%, 95%);
+
+ }
+.main-container{
+  /*padding: 0 190px 0px 190px;*/
+  display: flex;
+
+  margin: 167px 15.4375% 50px 15.4375%; /* 16px = 1em = 1  */
+  /*width: 280px;*/
+  height: 78vh;
+  border-radius: 5%;
+  /*border: solid 3px black;*/
+
+}
+
+.cont{
+padding: 45px;
+min-width: 280px;
+font-size: 0.95em;
+}
+.cont-text{
+  line-height: 24px;
+  margin: 25px auto 90px auto;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cont h1{
+  margin: 29px 0 0 auto;
+
+}
+.container1{
+  background: hsl(31, 77%, 52%);
+  width: auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+}
+.container2{
+  background: hsl(184, 100%, 22%);
+
+}
+.container3{
+  background: hsl(179, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+
+}
+.container-logo img{
+  width: 31%;
+}
+.btn {
+
+  border-radius: 28px;
+  font-family: Lexend Deca;
+
+  font-size: 14px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 11px 25px 11px 25px;
+  margin: 0 35px 0 0;
+  border: solid #e6edf2 2px;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.cont a:hover  {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.cont a{
+  text-decoration: none;
+}
+.container1   .btn {
+  color: hsl(31, 77%, 52%);
+}
+.container2   .btn{
+  color: hsl(184, 100%, 22%);
+}
+.container3  .btn{
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 900px){
+      .main-container{
+        flex-direction: column;
+      }
+      .container1{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+      }
+      .container3{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+      }
+}
